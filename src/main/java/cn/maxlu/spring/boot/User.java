@@ -1,4 +1,4 @@
-package cn.maxlu;
+package cn.maxlu.spring.boot;
 
 @SuppressWarnings("unused")
 public class User {
