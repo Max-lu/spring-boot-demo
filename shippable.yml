@@ -7,7 +7,6 @@ jdk:
 
 build:
   pre_ci_boot:
-    image_name: dry-dock/u14jav
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
