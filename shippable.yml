@@ -7,8 +7,7 @@ jdk:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14nod
-    image_tag: prod
+    image_name: dry-dock/u14jav
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
@@ -16,7 +15,7 @@ build:
     - echo "this is master branch"
 
   ci:
-    - npm install
+    - mvn clean install
 
   post_ci:
     - ls -a
